@@ -2050,7 +2050,7 @@
         div#n2-ss-5 .n2-font-3aeaabc14c9def4c0e14e4214923936e-hover {
             font-family: 'coconut-water';
             color: #ffffff;
-            font-size: 180.75%;
+            font-size: 171%;
             text-shadow: none;
             line-height: 1.4;
             font-weight: normal;
@@ -2177,7 +2177,7 @@
         }
 
         div#n2-ss-5 .n-uc-15945e9ac69ab {
-            --margin-top: 350px;
+            --margin-top: 250px;
             --margin-bottom: 5px
         }
 
@@ -3186,6 +3186,10 @@
 </head>
 
 <div id="landing-page">
+    <video id="video-background" autoplay muted loop>
+        <source src="./lading page.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     <button class="enter-button" style="                                                                    font-family: ''circular'', sans-serif;
                                         
     ">ENTER</button>
@@ -3203,22 +3207,31 @@
 
     </header> -->
     <Style>
-       #landing-page {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 100vh;
-          /* width: 100%; */
-          background-image: url(./assets/Footer\ Bg.gif);
-          background-position: center;
-          background-size: cover;
-          
-        }
+      #landing-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* width: 100%; */
+    overflow: hidden; /* Hide any overflowing content */
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
         #main-content {
           display: none;
           /* padding: 20px; */
         }
         .enter-button {
+
+            position: absolute;
+
           padding: 20px;
           font-size: 6rem;
           color: #c4c4c4;
@@ -3228,7 +3241,29 @@
           margin-top: 35%;
           font-family: circular;
         }
+        
+        @media only screen and (min-width: 768px) {
+    .enter-button {
+        bottom: 28%;
+        left: 73%;
+        margin-top: 35%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .enter-button {
+        /* Add mobile-specific styles here */
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 0;
+        font-size: 2rem;
+        padding: 10px;
+    }
+}
         .enter-button:hover {
+            position: absolute;
+
+            
           padding: 20px;
           font-size: 6rem;
           color: #fff;
@@ -4085,6 +4120,10 @@
                                                                                 data-sstype="layer">
                                                                                 <div id="n2-ss-5item1" class="n2-font-ab4bc9884e48564b461a2c4d8cfa40f5-hover   n2-ss-item-content n2-ss-text n2-ow" style="display:block;">Join Us</div>
                                                                             </div>
+                                                                            <div>
+                                                                                <img src="./spotify.jpg" width="350" height="350">
+                                                                                </div>
+
                                                                            
                                                                             <div class="n2-ss-layer n2-ow n-uc-15945e9ac69ab" data-pm="normal" data-sstype="layer">
                                                                                 <div id="n2-ss-5item8" class="n2-font-3aeaabc14c9def4c0e14e4214923936e-hover   n2-ss-item-content n2-ss-text n2-ow" style="display:block;">When not curled up in the bed, $Purrple Cat finds magic in the studio, a place where dreamy music takes you on adventures to faraway lands and fills your heart with warmth. $Purrple Cat hopes to create a surreal world with music where cats and everyone can be one.$Purrple cat’s main goal is to emphasizing community involvement and bringing everyone together from all walks of life. We're making sure everyone can join in on the fun and experience the benefits of crypto in a way that's easy and enjoyable.</div>
