@@ -20,7 +20,7 @@ ss3-force-full-width {
     opacity: 0;
     width: 100vw;
     transform: translateX(-100vw);
-    min-height:900px
+    height:900px
 }
 
 .n2-section-smartslider {
